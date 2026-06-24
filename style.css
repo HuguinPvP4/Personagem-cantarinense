@@ -5,7 +5,6 @@
    Data: 
    ============================================================ */
 
-
 /* ============================================================
    DICA: Como selecionar elementos no CSS
 
@@ -14,226 +13,418 @@
    Por CLASSE:    .nome-classe { }(aplica em vários elementos de uma vez)
    ============================================================ */
 
-
 /* ----------------------------------------------------------
    1. ESTILOS GERAIS DA PÁGINA
-   Aqui você configura o visual padrão do site inteiro.
-   Sugestão: defina a cor de fundo, a fonte padrão e a cor do texto.
-   ---------------------------------------------------------- */
+   ============================================================ */
 
-   body {
-    background-color:midnightblue;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-   }
-   
-   
-   /* ----------------------------------------------------------
-      2. CABEÇALHO  →  #cabecalho
-      A área do topo com o nome e título do personagem.
-      ---------------------------------------------------------- */
-   
-   #cabecalho {
-   background-color:saddlebrown;
-   border-radius: 5px;
-   }
-   
-   #nome-personagem {
-    color:aliceblue;
-   }
-   
-   #titulo-personagem {
-   }
-   
-   
-   /* ----------------------------------------------------------
-      3. CONTEÚDO PRINCIPAL  →  #conteudo-principal
-      O bloco que envolve tudo entre o cabeçalho e o rodapé.
-      ---------------------------------------------------------- */
-   
-   #conteudo-principal {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      4. SEÇÃO DE APRESENTAÇÃO  →  #secao-apresentacao
-      Imagem do personagem + texto de descrição lado a lado.
-      ---------------------------------------------------------- */
-   
-   #secao-apresentacao {
-   background-color:cornflowerblue;
-   border-radius: 10px;
-   }
-   
-   #bloco-imagem {
-   
-   }
-   
-   #imagem-personagem {
-    border-radius: 40px;
-   }
-   
-   .legenda {
-   
-   }
-   
-   #bloco-descricao {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      5. TÍTULOS DE SEÇÃO  →  .titulo-secao
-      Usados em todas as seções da página.
-      ---------------------------------------------------------- */
-   
-   .titulo-secao {
-   background-color:darkkhaki;
-   color: white;
-   border-radius: 5px;
-   }
-   
-   
-   /* ----------------------------------------------------------
-      6. TEXTOS DE DESCRIÇÃO  →  .texto-descricao
-      Parágrafos dentro do bloco de descrição do personagem.
-      ---------------------------------------------------------- */
-   
-   .texto-descricao {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      7. SEÇÃO DE ATRIBUTOS  →  #secao-atributos
-      A grade com os cards de atributo (ataque, defesa, etc.).
-      ---------------------------------------------------------- */
-   
-   #secao-atributos {
-   background-color:darkgoldenrod;
-   }
-   
-   #grade-atributos {
-   
-   }
-   
-   /* Cada card de atributo individualmente */
-   .card-atributo {
-   
-   }
-   
-   .icone-atributo {
-   
-   }
-   
-   .nome-atributo {
-   
-   }
-   
-   .valor-atributo {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      8. SEÇÃO DE HABILIDADES  →  #secao-habilidades
-      Lista de habilidades com imagem e descrição.
-      ---------------------------------------------------------- */
-   
-   #secao-habilidades {
-   background-color:darkslateblue;
-   border-radius: 5px;
-   }
-   
-   #lista-habilidades {
-   
-   }
-   
-   /* Cada card de habilidade */
-   .card-habilidade {
-   
-   }
-   
-   .imagem-habilidade {
-   
-   }
-   
-   .info-habilidade {
-   
-   }
-   
-   .nome-habilidade {
-   
-   }
-   
-   .tipo-habilidade {
-   
-   }
-   
-   .descricao-habilidade {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      9. SEÇÃO DE CURIOSIDADES  →  #secao-curiosidades
-      Lista com fatos sobre o personagem.
-      ---------------------------------------------------------- */
-   
-   #secao-curiosidades {
-   background-color: saddlebrown;
-   }
-   
-   #lista-curiosidades {
-   
-   }
-   
-   .item-curiosidade {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      10. SEÇÃO DE FRASES  →  #secao-frases
-      A frase marcante do personagem em destaque.
-      ---------------------------------------------------------- */
-   
-   #secao-frases {
-   background-color:cornflowerblue;
-   }
-   
-   #frase-personagem {
-   
-   }
-   
-   #autor-frase {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      11. RODAPÉ  →  #rodape
-      Área inferior com os créditos da ficha.
-      ---------------------------------------------------------- */
-   
-   #rodape {
-   
-   }
-   
-   #creditos {
-   
-   }
-   
-   #nome-aluno {
-   
-   }
-   
-   #ano {
-   
-   }
-   
-   
-   /* ----------------------------------------------------------
-      ÁREA LIVRE
-      Quer adicionar mais estilos? Use este espaço!
-      ---------------------------------------------------------- */
+body {
+    background-color: #0a0e27;  /* Cor de fundo mais escura e elegante */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ----------------------------------------------------------
+   2. CABEÇALHO
+   ============================================================ */
+
+#cabecalho {
+    background: linear-gradient(135deg, #8B4513, #D2691E);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+
+#nome-personagem {
+    color: #FFD700;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    letter-spacing: 3px;
+}
+
+#titulo-personagem {
+    color: #f0e6d3;
+    font-size: 1.3em;
+    margin: 10px 0 0 0;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+/* ----------------------------------------------------------
+   3. CONTEÚDO PRINCIPAL
+   ============================================================ */
+
+#conteudo-principal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ----------------------------------------------------------
+   4. SEÇÃO DE APRESENTAÇÃO
+   USANDO GRID: 2 colunas - imagem | descrição
+   ============================================================ */
+
+#secao-apresentacao {
+    background: linear-gradient(135deg, #4a6fa5, #6b8cae);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /* Imagem 1 parte, texto 2 partes */
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#bloco-imagem {
+    text-align: center;
+}
+
+#imagem-personagem {
+    border-radius: 50%;
+    border: 4px solid #FFD700;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#imagem-personagem:hover {
+    transform: scale(1.05);
+}
+
+.legenda {
+    color: #f0e6d3;
+    font-size: 0.9em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+#bloco-descricao {
+    padding: 10px;
+}
+
+/* ----------------------------------------------------------
+   5. TÍTULOS DE SEÇÃO
+   ============================================================ */
+
+.titulo-secao {
+    background: linear-gradient(135deg, #8B6914, #DAA520);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    display: inline-block;
+}
+
+/* ----------------------------------------------------------
+   6. TEXTOS DE DESCRIÇÃO
+   ============================================================ */
+
+.texto-descricao {
+    color: #f0e6d3;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin: 15px 0;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    border-left: 4px solid #FFD700;
+}
+
+/* ----------------------------------------------------------
+   7. SEÇÃO DE ATRIBUTOS
+   USANDO GRID: 3 colunas
+   ============================================================ */
+
+#secao-atributos {
+    background: linear-gradient(135deg, #8B6914, #B8860B);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#grade-atributos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas iguais */
+    gap: 20px;
+}
+
+.card-atributo {
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,215,0,0.3);
+}
+
+.card-atributo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.5);
+}
+
+.icone-atributo {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.nome-atributo {
+    font-weight: bold;
+    color: #FFD700;
+    display: block;
+    font-size: 1.1em;
+}
+
+.valor-atributo {
+    color: #f0e6d3;
+    display: block;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* ----------------------------------------------------------
+   8. SEÇÃO DE HABILIDADES
+   USANDO GRID: 3 colunas
+   ============================================================ */
+
+#secao-habilidades {
+    background: linear-gradient(135deg, #2c3e6b, #4a6fa5);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#lista-habilidades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas iguais */
+    gap: 25px;
+}
+
+.card-habilidade {
+    background: rgba(0,0,0,0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card-habilidade:hover {
+    transform: scale(1.02);
+}
+
+.imagem-habilidade {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #FFD700;
+}
+
+.info-habilidade {
+    padding: 15px;
+}
+
+.nome-habilidade {
+    color: #FFD700;
+    font-size: 1.2em;
+    margin: 0 0 5px 0;
+}
+
+.tipo-habilidade {
+    color: #87CEEB;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.descricao-habilidade {
+    color: #f0e6d3;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 10px 0 0 0;
+}
+
+/* ----------------------------------------------------------
+   9. SEÇÃO DE CURIOSIDADES
+   ============================================================ */
+
+#secao-curiosidades {
+    background: linear-gradient(135deg, #8B4513, #A0522D);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#lista-curiosidades {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;  /* 1 coluna */
+    gap: 15px;
+}
+
+.item-curiosidade {
+    background: rgba(0,0,0,0.3);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #FFD700;
+    color: #f0e6d3;
+    font-size: 1.05em;
+    transition: transform 0.2s ease;
+}
+
+.item-curiosidade:hover {
+    transform: translateX(10px);
+    background: rgba(0,0,0,0.5);
+}
+
+.item-curiosidade::before {
+    content: "✦ ";
+    color: #FFD700;
+}
+
+/* ----------------------------------------------------------
+   10. SEÇÃO DE FRASES
+   ============================================================ */
+
+#secao-frases {
+    background: linear-gradient(135deg, #4a6fa5, #2c3e6b);
+    border-radius: 15px;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+#frase-personagem {
+    font-size: 2.5em;
+    color: #FFD700;
+    font-style: italic;
+    margin: 0;
+    padding: 20px;
+    border-top: 3px solid #FFD700;
+    border-bottom: 3px solid #FFD700;
+    display: inline-block;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+#autor-frase {
+    color: #87CEEB;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* ----------------------------------------------------------
+   11. RODAPÉ
+   ============================================================ */
+
+#rodape {
+    background: linear-gradient(135deg, #0a0e27, #1a1f3a);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-top: 3px solid #FFD700;
+}
+
+#creditos {
+    color: #87CEEB;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+#nome-aluno {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+#ano {
+    color: #f0e6d3;
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+/* ----------------------------------------------------------
+   12. BOTÃO DE NAVEGAÇÃO (NOVO!)
+   ============================================================ */
+
+.btn-navegar {
+    display: inline-block;
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #6C3FC5, #8B5CF6);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(108, 63, 197, 0.4);
+    margin: 10px 0;
+    border: 2px solid rgba(255,255,255,0.1);
+}
+
+.btn-navegar:hover {
+    background: linear-gradient(135deg, #4A2A8A, #6C3FC5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108, 63, 197, 0.6);
+    border-color: #FFD700;
+}
+
+/* ----------------------------------------------------------
+   13. RESPONSIVIDADE
+   ============================================================ */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    #secao-apresentacao {
+        grid-template-columns: 1fr;  /* Vira 1 coluna */
+        text-align: center;
+    }
+    
+    #grade-atributos {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas */
+    }
+    
+    #lista-habilidades {
+        grid-template-columns: 1fr;  /* 1 coluna */
+    }
+    
+    #nome-personagem {
+        font-size: 2em;
+    }
+    
+    #frase-personagem {
+        font-size: 1.8em;
+    }
+}
+
+/* Para telas muito pequenas (celulares) */
+@media (max-width: 480px) {
+    #grade-atributos {
+        grid-template-columns: 1fr;  /* 1 coluna */
+    }
+    
+    body {
+        padding: 10px;
+    }
+    
+    .btn-navegar {
+        padding: 12px 24px;
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
